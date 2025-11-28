@@ -1,44 +1,82 @@
+# 🥂 PURSUE — Premium Minimalist Fashion App  
 
-  # Premium Minimalist Fashion App
-  # Pursue – Premium Minimalist Fashion App
+Pursue is a high-end, luxury-focused minimalist fashion ecommerce experience.  
+Products start at **₹15,000** and go up to **₹70,000**, mirroring high-fashion boutique pricing and experience.
 
-Pursue is a high-end, minimalist fashion ecommerce experience.  
-Products start at ₹15,000 and go up to ₹70k, designed to feel like a luxury boutique.
+Every time a user adds an item to the cart, the CTA reads **“Pursue This.”**  
+This reinforces the brand philosophy — luxury is not bought, it is *pursued.*
 
-Every time a user adds an item to the bag, the CTA says **“Pursue this”**, and the app takes them through the full customer journey: browse → add to cart → checkout → address → delivery.
+The app walks the user through the complete shopping journey:
 
-
-## 🧩 Tech Stack
-
-- **Frontend:** Vite + TypeScript + HTML/CSS (minimalist UI)
-- **Database:** Supabase / Vibe App DB (for users, orders, and products)
-- **Auth:** Email + password (login / signup / forgot password)
-- **Version Control:** Git + GitHub
+**Browse → Add to Cart → Pursue This → Checkout → Address → Delivery.**
 
 ---
 
-## ✨ Core Features 
-1. **Landing Page**
-   - Explains the Pursue brand, luxury positioning, and product range.
-2. **Auth Flow**
-   - ✅ Signup  
-   - ✅ Login  
-   - ✅ Forgot Password
-3. **CRUD in Action**
-   - Create: Add products to cart / create an order  
-   - Read: View product list, cart items, and order details  
-   - Update: Edit cart quantities / update address  
-   - Delete: Remove items from cart
-4. **Order Journey**
-   - Add to bag → **“Pursue this”** CTA  
-   - Checkout form (address: home/other)  
-   - Order confirmation + delivery status screen
+## 🔗 Project Links
+| Resource | Link |
+|--------|-------|
+| **Live App** | _add your Vibe App link here_ |
+| **Loom Walkthrough** | _add Loom video link here_ |
+| **Figma UI File** | https://www.figma.com/design/So3odxDYIKMzbACbD27cAI/Premium-Minimalist-Fashion-App |
 
-  This is a code bundle for Premium Minimalist Fashion App. The original project is available at https://www.figma.com/design/So3odxDYIKMzbACbD27cAI/Premium-Minimalist-Fashion-App.
+---
 
-  ## Running the code
+## 🧩 Tech Stack
 
-  Run `npm i` to install the dependencies.
+| Layer | Technology |
+|---|---|
+| Frontend | Vite + TypeScript + HTML/CSS |
+| Database | Supabase (JSONB product catalog + orders) |
+| Auth | Email/Password (Signup + Login + Forgot Password) |
+| Version Control | Git + GitHub |
 
-  Run `npm run dev` to start the development server.
-  
+---
+
+## ✨ Core Features
+
+### 1. Landing Page  
+- Presents the Pursue brand, minimal aesthetic, luxury pricing & product catalogue.
+
+### 2. Authentication  
+- ✔ Signup  
+- ✔ Login  
+- ✔ Forgot Password  
+
+### 3. CRUD in Action  
+| Operation | Example in App |
+|---|---|
+| **Create** | Add product(s) to cart, create an order |
+| **Read** | View products, cart, past orders |
+| **Update** | Modify quantity, edit address |
+| **Delete** | Remove items from cart |
+
+### 4. Full Order Flow  
+> Add to Bag → **Pursue This** → Checkout → Address → Delivery Tracking
+
+---
+
+## 🗄️ Database (Supabase)
+
+Table: `kv_store_1c267159`  
+Stores:
+
+- `categories` → Jackets / Shirts / Trousers / Suits etc.
+- `product:*` → Individual product objects with JSONB fields like:
+  - `id`
+  - `name`
+  - `price`
+  - `image`
+  - `material / fit / description`
+
+Products are fetched directly from Supabase for real-time catalog access.
+
+---
+
+## 🚀 Running the Code
+
+```bash
+# Install dependencies
+npm i
+
+# Start development server
+npm run dev
