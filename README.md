@@ -15,7 +15,7 @@ The app walks the user through the complete shopping journey:
 ## 🔗 Project Links
 | Resource | Link |
 |--------|-------|
-| **Live App** | _add your Vibe App link here_ |
+| **Supabase** | https://supabase.com/dashboard/project/gqijkjdfmmiveuzchelc/editor/18604 |
 | **Loom Walkthrough** | _add Loom video link here_ |
 | **Figma UI File** | https://www.figma.com/design/So3odxDYIKMzbACbD27cAI/Premium-Minimalist-Fashion-App |
 
